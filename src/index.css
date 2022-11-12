@@ -8,18 +8,17 @@
     #6d6d6d -78.47%,
     #11101d 91.61%
   );
+  
 
-  min-height: 100%;
+
 }
 * {
   margin: none;
 }
-html {
-  height: 100%;
-}
-body {
-  height: 100%;
-}
+html, body, .App, .App>div{
+  min-height: 100vh;
+  max-height: 100%;
+} 
 
 .bg-discount-gradient {
   background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
