@@ -3,20 +3,10 @@ import React, { useState, useRef } from 'react'
 
 
 
-const ContactInput = () => {
-  const [contactInformation, setContactInformation] = useState({
-    firstName: "",
-    lastName: "",
-    address: "",
-    phoneNumber: "",
-    email: "",
-    aboutMe: "",
-  })
-  const [file, setFile] = useState(null);
-  
+const ContactInput = (props) => {
   
   const handleChange = (event) => {
-    setContactInformation({ ...contactInformation, [event.target.name]: event.target.value })
+    props.passContactInformation({ ...props.contactInformation, [event.target.name]: event.target.value })
   }
 
   return (
@@ -27,37 +17,45 @@ const ContactInput = () => {
         type="text" 
         name='firstName' 
         placeholder='First name' 
-        value={contactInformation.firstName} 
+        value={props.contactInformation.firstName} 
         onChange={ handleChange } />
 
         <input 
         type="text" 
         name='lastName' 
         placeholder='Last name' 
-        value={contactInformation.lastName} 
+        value={props.contactInformation.lastName} 
         onChange={ handleChange}  />
 
         <input 
         type="text" 
         name="address" id="address" 
         placeholder='Address' 
-        value={contactInformation.address} 
+        value={props.contactInformation.address} 
         onChange={ handleChange } />
 
         <input 
         type="text" 
-        placeholder='Phone number' />
+        name='phoneNumber' id="phoneNumber" 
+        placeholder='Phone number'
+        value={props.contactInformation.phoneNumber} 
+        onChange={ handleChange } />
 
         <input 
         type="text" 
-        placeholder='Email' />
+        name='email' id="email" 
+        placeholder='Email'
+        value={props.contactInformation.email}
+        onChange={ handleChange } />
 
         <textarea 
         name="aboutMe" 
         id="aboutMe" 
         cols="30" 
         rows="6" 
-        placeholder='About me'></textarea>
+        placeholder='About me'
+        value={props.contactInformation.aboutMe}
+        onChange={handleChange}></textarea>
 
         <label htmlFor="photo" 
         className='text-white'>Photo</label>
@@ -67,7 +65,6 @@ const ContactInput = () => {
         name="photo" 
         id="photo" 
         className='text-white' 
-        value={file}
         onChange={(e) => setFile(e.target.files[0])} /> 
         
       </form>
