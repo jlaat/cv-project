@@ -35,7 +35,7 @@ function App() {
         <div className='flex flex-1 basis-[60%] flex-row bg-discount-gradient rounded-[10px] '>
           <ContactOutput contactInformation={contactInformation} />
           <div className='flex flex-1 flex-row basis-[70%] justify-center bg-dimWhite'>
-            <EducationOutput />
+            <EducationOutput educationInputs={educationInputs} />
             <WorkOutput />
           </div>
         </div>

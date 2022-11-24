@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
-const EducationInput = () => {
+const EducationInput = (props) => {
     const [educationValues, setEducationValues] = useState({
       degree: "",
       school: "",
@@ -11,6 +11,11 @@ const EducationInput = () => {
 
     const handleChange = (event) => {
       setEducationValues({ ...educationValues, [event.target.name]: event.target.value })
+    }
+
+    const addToEducations = (event) => {
+      event.preventDefault();
+      props.passEducationInputs(current => [...current, educationValues]);
     }
   
 return (<section className=' flex-1 bg-discount-gradient rounded-[10px] p-3'>
@@ -48,7 +53,7 @@ return (<section className=' flex-1 bg-discount-gradient rounded-[10px] p-3'>
         onChange={handleChange} />
         
         <div>
-          <button type="submit" className='text-white bg-green-500 py-1 px-3 rounded-[10px] hover:bg-green-400'>Add</button>
+          <button className='text-white bg-green-500 py-1 px-3 rounded-[10px] hover:bg-green-400' onClick={addToEducations}>Add</button>
           <button type="reset" className='text-white bg-red-500 py-1 px-3 rounded-[10px] hover:bg-red-400 ml-3'>Reset</button>
         </div>
         </form>
