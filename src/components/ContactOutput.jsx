@@ -22,7 +22,7 @@ const ContactOutput = (props) => {
       lg:h-[200px] lg:w-[200px] self-center' />
 
      
-      <h2 className='font-poppins p-3 sm:text-xl md:text-2xl text-center whitespace-pre-wrap'>About Me</h2>
+      <h2 className='font-poppins mb-3 p-1 sm:text-xl md:text-2xl text-center whitespace-pre-wrap border-b-2 border-white'>About Me</h2>
       <p className='whitespace-pre-wrap'>{props.contactInformation.aboutMe}</p>
       </div>
 

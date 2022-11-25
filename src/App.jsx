@@ -10,15 +10,22 @@ import {ContactInput,
 
 function App() {
   const [contactInformation, setContactInformation] = useState({
-    firstName: "",
-    lastName: "",
-    address: "",
-    phoneNumber: "",
-    email: "",
-    aboutMe: "",
+    firstName: "Joni",
+    lastName: "Laatikainen",
+    address: "Laiduntie 1 A9",
+    phoneNumber: "0405452601",
+    email: "jonilaatikaine@gmail.com",
+    aboutMe: "Ahkera poika",
   })
 
-  const [educationInputs, setEducationInputs] = useState([]);
+  const [educationInputs, setEducationInputs] = useState([{"degree":"Talotekniikan perustutkinto","school":"Pohjois-karjalan koulutuskuntayhtymä","city":"Joensuu","startDate":"2014-12-16","endDate":"2015-11-18"}]);
+
+
+  const [workInputs, setWorkInputs] = useState([{title: "Asentaja",
+  employer: "Vesivek Oy",
+  jobStart: "",
+  jobEnd: "",
+  description: "",}]);
 
   const [file, setFile] = useState(null);
 
@@ -29,10 +36,10 @@ function App() {
         <div className='flex flex-1 flex-col basis-[40%] gap-10'>
           <ContactInput contactInformation={contactInformation} passContactInformation={setContactInformation} />
           <EducationInput educationInputs={educationInputs} passEducationInputs={setEducationInputs} />
-          <WorkInput />
+          <WorkInput workInputs={workInputs} passWorkInputs={setWorkInputs} />
         </div>
 
-        <div className='flex flex-1 basis-[60%] flex-row bg-discount-gradient rounded-[10px] '>
+        <div className='flex flex-1 basis-[210mm] flex-row bg-discount-gradient rounded-[10px]'>
           <ContactOutput contactInformation={contactInformation} />
           <div className='flex flex-1 flex-row basis-[70%] justify-center bg-dimWhite'>
             <EducationOutput educationInputs={educationInputs} />
