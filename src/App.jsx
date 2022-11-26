@@ -30,9 +30,9 @@ function App() {
     {
       title: "Asentaja",
       employer: "Vesivek Oy",
-      jobStart: "",
-      jobEnd: "",
-      description: "",
+      jobStart: "2019",
+      jobEnd: "2022",
+      description: "Töitä",
     },
   ]);
 

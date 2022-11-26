@@ -10,11 +10,11 @@ const LeftSide = (props) => {
       />
       <EducationInput
         educationInputs={props.educationInputs}
-        passEducationInputs={props.setEducationInputs}
+        passEducationInputs={props.passEducationInputs}
       />
       <WorkInput
         workInputs={props.workInputs}
-        passWorkInputs={props.setWorkInputs}
+        passWorkInputs={props.passWorkInputs}
       />
     </div>
   );

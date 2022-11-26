@@ -11,7 +11,7 @@ const EducationInput = (props) => {
 
   // Tulee muuttaa niin jotta muutokset näkyvät heti käyttöliitymässä
   const handleChange = (event) => {
-    passEducationInputs({
+    setEducationValues({
       ...educationValues,
       [event.target.name]: event.target.value,
     });
