@@ -1,11 +1,14 @@
-import ContactInput from "./ContactInput";
-import ContactOutput from "./ContactOutput";
-import EducationInput from "./EducationInput";
-import EducationOutput from "./EducationOutput";
+import ContactInput from "./Contact/ContactInput";
+import ContactOutput from "./Contact/ContactOutput";
+import EducationInput from "./Education/EducationInput";
+import EducationOutput from "./Education/EducationOutput";
 import Footer from "./Footer";
 import Header from "./Header";
-import WorkInput from "./WorkInput";
-import WorkOutput from "./WorkOutput";
+import WorkInput from "./Experience/WorkInput";
+import WorkOutput from "./Experience/WorkOutput";
+import NameTitleOutput from "./Contact/NameTitleOutput";
+import LeftSide from "./LeftSide";
+import RightSide from "./RightSide";
 
 export {
   ContactInput,
@@ -16,4 +19,7 @@ export {
   Header,
   WorkInput,
   WorkOutput,
+  NameTitleOutput,
+  LeftSide,
+  RightSide,
 };
