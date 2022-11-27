@@ -15,12 +15,15 @@ const ContactOutput = (props) => {
       rounded-[10px]"
         />
 
-        <h2 className="font-poppins sm:text-xl md:text-2xl text-center whitespace-pre-wrap">
+        <h2 className="font-poppins sm:text-xl md:text-2xl text-center whitespace-pre-wrap font-light">
           About Me
         </h2>
-        <p className="whitespace-pre-wrap">
+        <p className="whitespace-pre-wrap  border-b-[1px] border-solid border-white pb-5">
           {props.contactInformation.aboutMe}
         </p>
+        <h2 className="font-poppins sm:text-xl md:text-2xl text-center whitespace-pre-wrap font-light">
+          Personal Details
+        </h2>
         <div className="flex gap-2 justify-start items-center text-left">
           <AiFillPhone /> {props.contactInformation.phoneNumber}
         </div>
