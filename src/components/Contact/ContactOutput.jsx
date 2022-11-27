@@ -1,6 +1,6 @@
 import React from "react";
 import faceLogo from "../../assets/face.jpeg";
-import { AiFillPhone, AiOutlineMail, AiOutlineHome } from "react-icons/ai";
+import { AiOutlinePhone, AiOutlineMail, AiOutlineHome } from "react-icons/ai";
 
 const ContactOutput = (props) => {
   return (
@@ -25,7 +25,7 @@ const ContactOutput = (props) => {
           Personal Details
         </h2>
         <div className="flex gap-2 justify-start items-center text-left">
-          <AiFillPhone /> {props.contactInformation.phoneNumber}
+          <AiOutlinePhone /> {props.contactInformation.phoneNumber}
         </div>
         <div className="flex gap-2 justify-start items-center text-left">
           <AiOutlineHome /> {props.contactInformation.address}

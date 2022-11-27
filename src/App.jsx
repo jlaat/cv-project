@@ -53,6 +53,7 @@ function App() {
         <RightSide
           contactInformation={contactInformation}
           educationInputs={educationInputs}
+          workInputs={workInputs}
         />
       </main>
     </div>

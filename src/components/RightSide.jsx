@@ -16,7 +16,7 @@ const RightSide = (props) => {
           educationInputs={props.educationInputs}
           contactInformation={props.contactInformation}
         />
-        <WorkOutput />
+        <WorkOutput workInputs={props.workInputs} />
       </div>
     </div>
   );

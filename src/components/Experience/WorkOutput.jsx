@@ -1,4 +1,5 @@
 import React from "react";
+import WorkCard from "./WorkCard";
 
 const WorkOutput = (props) => {
   return (
@@ -6,7 +7,19 @@ const WorkOutput = (props) => {
       <h1 className="font-poppins text-neutral-800 text-lg mb-10 px-1 ">
         Experience
       </h1>
-      <div className="flex gap-10 flex-col "></div>
+      <div className="flex flex-1 w-[100%] gap-10 flex-col ">
+        {props.workInputs.map((input) => {
+          return (
+            <WorkCard
+              key={input.startDate}
+              title={input.title}
+              jobStart={input.jobStart}
+              jobEnd={input.jobEnd}
+              description={input.description}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
