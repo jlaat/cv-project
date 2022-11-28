@@ -12,6 +12,7 @@ const WorkOutput = (props) => {
           return (
             <WorkCard
               key={input.startDate}
+              employer={input.employer}
               title={input.title}
               jobStart={input.jobStart}
               jobEnd={input.jobEnd}
