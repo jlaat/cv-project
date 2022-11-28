@@ -3,7 +3,7 @@ import EducationCard from "./EducationCard";
 
 const EducationOutput = (props) => {
   return (
-    <div className="flex flex-col flex-1 text-white justify-start items-center mt-10 mx-5 p-5 border-b-2 border-neutral-400">
+    <div className="flex flex-col flex-1 text-white justify-start items-center my-10 mx-5 p-5 border-b-2 border-neutral-400">
       <h1 className="font-poppins text-neutral-800 text-lg px-1 mb-5 ">
         Education
       </h1>

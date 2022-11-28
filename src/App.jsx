@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main className="flex flex-col md:flex-row bg-gray-300">
+      <main className="flex flex-col md:flex-row bg-gray-300 align-top">
         <LeftSide
           contactInformation={contactInformation}
           passContactInformation={setContactInformation}

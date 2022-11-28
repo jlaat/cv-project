@@ -8,9 +8,9 @@ import {
 
 const RightSide = (props) => {
   return (
-    <div className="flex w-[210mm] h-[270mm] flex-row rounded-[10px] p-10">
+    <div className="flex w-[210mm] h-[279mm] flex-row rounded-[10px] p-10 sticky top-0">
       <ContactOutput contactInformation={props.contactInformation} />
-      <div className="flex-1 flex-col basis-[70%] justify-center bg-white">
+      <div className="flex flex-1 flex-col basis-[70%] bg-white">
         <NameTitleOutput contactInformation={props.contactInformation} />
         <EducationOutput
           educationInputs={props.educationInputs}
