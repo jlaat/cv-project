@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WorkStorageCard from "./WorkStorageCard";
 
 const WorkInput = (props) => {
   const [workValues, setWorkValues] = useState({
@@ -71,6 +72,21 @@ const WorkInput = (props) => {
           </button>
         </div>
       </form>
+      <div className="flex">
+        {props.workInputs.map((input) => {
+          return (
+            <WorkStorageCard
+              workInputs={props.workInputs}
+              passWorkInputs={props.passWorkInputs}
+              title={input.title}
+              employer={input.employer}
+              jobStart={input.jobStart}
+              jobEnd={input.jobEnd}
+              description={input.description}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 };

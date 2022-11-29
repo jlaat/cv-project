@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import EducationStorageCard from "./EducationStorageCard";
 
 const EducationInput = (props) => {
   const [educationValues, setEducationValues] = useState({
@@ -9,7 +10,6 @@ const EducationInput = (props) => {
     endDate: "",
   });
 
-  // Tulee muuttaa niin jotta muutokset näkyvät heti käyttöliitymässä
   const handleChange = (event) => {
     setEducationValues({
       ...educationValues,
@@ -79,6 +79,21 @@ const EducationInput = (props) => {
           </button>
         </div>
       </form>
+      <div className="flex">
+        {props.educationInputs.map((input) => {
+          return (
+            <EducationStorageCard
+              passEducationInputs={props.passEducationInputs}
+              educationInputs={props.educationInputs}
+              degree={input.degree}
+              school={input.school}
+              city={input.city}
+              startDate={input.startDate}
+              endDate={input.endDate}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 };

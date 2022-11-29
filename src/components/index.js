@@ -9,6 +9,8 @@ import WorkOutput from "./Experience/WorkOutput";
 import NameTitleOutput from "./Contact/NameTitleOutput";
 import LeftSide from "./LeftSide";
 import RightSide from "./RightSide";
+import EducationStorageCard from "./Education/EducationStorageCard";
+import WorkStorageCard from "./Experience/WorkStorageCard";
 
 export {
   ContactInput,
@@ -22,4 +24,6 @@ export {
   NameTitleOutput,
   LeftSide,
   RightSide,
+  WorkStorageCard,
+  EducationStorageCard,
 };
