@@ -30,24 +30,28 @@ const WorkInput = (props) => {
           placeholder="Job title"
           name="title"
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
         <input
           type="text"
           placeholder="Employer"
           name="employer"
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
         <input
           type="text"
           placeholder="From"
           name="jobStart"
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
         <input
           type="text"
           placeholder="To"
           name="jobEnd"
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
         <textarea
           name="description"
@@ -56,6 +60,7 @@ const WorkInput = (props) => {
           rows="6"
           placeholder="Description"
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
         <div>
           <button

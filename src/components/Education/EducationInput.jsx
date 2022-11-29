@@ -33,6 +33,7 @@ const EducationInput = (props) => {
           name="degree"
           placeholder="Degree"
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <input
@@ -40,6 +41,7 @@ const EducationInput = (props) => {
           name="school"
           placeholder="School"
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <input
@@ -47,6 +49,7 @@ const EducationInput = (props) => {
           name="city"
           placeholder="City/town"
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <input
@@ -54,6 +57,7 @@ const EducationInput = (props) => {
           name="startDate"
           placeholder="From"
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <input
@@ -62,6 +66,7 @@ const EducationInput = (props) => {
           placeholder="To"
           id="endDate"
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <div>

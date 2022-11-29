@@ -20,6 +20,7 @@ const ContactInput = (props) => {
           placeholder="First name"
           value={props.contactInformation.firstName}
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <input
@@ -28,6 +29,7 @@ const ContactInput = (props) => {
           placeholder="Last name"
           value={props.contactInformation.lastName}
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <input
@@ -36,6 +38,7 @@ const ContactInput = (props) => {
           placeholder="Title"
           value={props.contactInformation.title}
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <input
@@ -45,6 +48,7 @@ const ContactInput = (props) => {
           placeholder="Address"
           value={props.contactInformation.address}
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <input
@@ -54,6 +58,7 @@ const ContactInput = (props) => {
           placeholder="Phone number"
           value={props.contactInformation.phoneNumber}
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <input
@@ -63,6 +68,7 @@ const ContactInput = (props) => {
           placeholder="Email"
           value={props.contactInformation.email}
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         />
 
         <textarea
@@ -73,6 +79,7 @@ const ContactInput = (props) => {
           placeholder="About me"
           value={props.contactInformation.aboutMe}
           onChange={handleChange}
+          className="p-1 rounded-[4px]"
         ></textarea>
 
         <label htmlFor="photo" className="text-white">
