@@ -26,15 +26,7 @@ function App() {
 
   const [educationInputs, setEducationInputs] = useState([]);
 
-  const [workInputs, setWorkInputs] = useState([
-    {
-      title: "Asentaja",
-      employer: "Vesivek Oy",
-      jobStart: "2019",
-      jobEnd: "2022",
-      description: "Töitä",
-    },
-  ]);
+  const [workInputs, setWorkInputs] = useState([]);
 
   const [file, setFile] = useState(null);
 

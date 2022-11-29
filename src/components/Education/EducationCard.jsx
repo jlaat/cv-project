@@ -7,12 +7,12 @@ const EducationCard = (props) => {
         <h2 className="flex-1 font-poppins text-left text-neutral-700 font-bold justify-self-start">
           {props.school}
         </h2>
-        <h2 className="flex-1 font-poppins text-left text-neutral-700 font-bold">
+        <h2 className="flex-1 font-poppins text-neutral-700 font-bold justify-self-end text-right">
           {`${props.startDate} - ${props.endDate}`}
         </h2>
       </div>
 
-      <h3 className="flex-1 font-poppins text-left text-neutral-600 justify-self-end">
+      <h3 className="flex-1 font-poppins text-left text-neutral-600">
         Degree: {props.degree}
       </h3>
     </div>

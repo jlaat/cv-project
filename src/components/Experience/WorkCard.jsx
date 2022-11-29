@@ -8,12 +8,15 @@ const WorkCard = (props) => {
           <h2 className="flex-1 font-poppins text-left text-neutral-700 font-bold justify-self-start">
             {props.employer}
           </h2>
-          <h2 className="flex-1 font-poppins text-left text-neutral-700 font-bold">
+          <h2 className="flex-1 font-poppins text-right text-neutral-700 font-bold">
             {`${props.jobStart} - ${props.jobEnd}`}
           </h2>
         </div>
         <h3 className="font-poppins text-left text-neutral-600">
           {`Title: ${props.title}`}
+        </h3>
+        <h3 className="font-poppins text-left text-neutral-600">
+          {`Description: ${props.description}`}
         </h3>
       </div>
     </div>
