@@ -15,13 +15,13 @@ import {
 
 function App() {
   const [contactInformation, setContactInformation] = useState({
-    firstName: "Joni",
-    lastName: "Laatikainen",
-    title: "Student",
-    address: "Laiduntie 1 A9",
-    phoneNumber: "0405452601",
-    email: "jonilaatikaine@gmail.com",
-    aboutMe: "Ahkera poika",
+    firstName: "",
+    lastName: "",
+    title: "",
+    address: "",
+    phoneNumber: "",
+    email: "",
+    aboutMe: "",
   });
 
   const [educationInputs, setEducationInputs] = useState([]);
