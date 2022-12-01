@@ -64,7 +64,7 @@ const WorkInput = (props) => {
         />
         <div>
           <button
-            className="text-white bg-green-500 py-1 px-3 rounded-[10px] hover:bg-green-400"
+            className="text-white bg-green-500 py-1 px-3 rounded-[9px] hover:bg-green-400"
             onClick={addToExperiences}
           >
             Add
