@@ -22,6 +22,7 @@ function App() {
     phoneNumber: "",
     email: "",
     aboutMe: "",
+    photo: null,
   });
 
   const [educationInputs, setEducationInputs] = useState([]);

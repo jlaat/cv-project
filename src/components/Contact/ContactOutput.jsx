@@ -7,7 +7,7 @@ const ContactOutput = (props) => {
     <div className="bg-blue-700 flex flex-1 flex-col basis-[30%] text-white items-center p-5">
       <div className="flex flex-1 flex-col gap-5">
         <img
-          src={faceLogo}
+          src={props.contactInformation.photo || faceLogo}
           alt="faceLogo"
           className="sm:w-[100px] sm:h-[100px] 
       md:h-[150px] md:w-[150px]

@@ -8,6 +8,16 @@ const ContactInput = (props) => {
     });
   };
 
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    props.passContactInformation({
+      ...props.contactInformation,
+      photo: URL.createObjectURL(file),
+    });
+  };
+
   return (
     <section className="flex-1 bg-neutral-600 rounded-[10px] p-3">
       <h2 className="flex-1  text-blue-400 font-bold font-poppins pb-3">
@@ -88,10 +98,11 @@ const ContactInput = (props) => {
 
         <input
           type="file"
+          accept="image/*"
           name="photo"
           id="photo"
           className="text-white"
-          onChange={(e) => setFile(e.target.files[0])}
+          onChange={handleFileChange}
         />
       </form>
     </section>
