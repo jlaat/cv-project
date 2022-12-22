@@ -9,10 +9,11 @@ const ContactOutput = (props) => {
         <img
           src={props.contactInformation.photo || faceLogo}
           alt="faceLogo"
-          className="sm:w-[100px] sm:h-[100px] 
-      md:h-[150px] md:w-[150px]
-      lg:h-[200px] lg:w-[200px] self-center
-      rounded-[10px]"
+          className="sm:w-[100px] sm:h-[140px] 
+      md:h-[200px] md:w-[150px]
+      lg:h-[240px] lg:w-[200px] self-center
+      rounded-[10px]
+      object-cover"
         />
 
         <h2 className="font-poppins sm:text-xl md:text-2xl text-center whitespace-pre-wrap font-light">

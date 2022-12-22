@@ -77,7 +77,7 @@ const WorkInput = (props) => {
           </button>
         </div>
       </form>
-      <div className="flex">
+      <div className="flex gap-3">
         {props.workInputs.map((input) => {
           return (
             <WorkStorageCard

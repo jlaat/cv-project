@@ -84,7 +84,7 @@ const EducationInput = (props) => {
           </button>
         </div>
       </form>
-      <div className="flex">
+      <div className="flex gap-3">
         {props.educationInputs.map((input) => {
           return (
             <EducationStorageCard
