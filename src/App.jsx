@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main className="flex flex-col md:flex-row bg-gray-300 align-top">
+      <main className="flex flex-col md:flex-row bg-neutral-300 align-top p-10 gap-20">
         <LeftSide
           contactInformation={contactInformation}
           passContactInformation={setContactInformation}

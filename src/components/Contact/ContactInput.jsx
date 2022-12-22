@@ -19,8 +19,8 @@ const ContactInput = (props) => {
   };
 
   return (
-    <section className="flex-1 bg-neutral-600 rounded-[10px] p-3">
-      <h2 className="flex-1  text-blue-400 font-bold font-poppins pb-3">
+    <section className="flex-1 bg-neutral-200 rounded-[10px] p-3 shadow-lg">
+      <h2 className="flex-1  text-neutral-700 font-bold font-poppins pb-3">
         Contact Information
       </h2>
       <form className="flex flex-col gap-3">
@@ -92,7 +92,7 @@ const ContactInput = (props) => {
           className="p-1 rounded-[4px]"
         ></textarea>
 
-        <label htmlFor="photo" className="text-white">
+        <label htmlFor="photo" className="text-neutral-800">
           Photo
         </label>
 
@@ -101,7 +101,7 @@ const ContactInput = (props) => {
           accept="image/*"
           name="photo"
           id="photo"
-          className="text-white"
+          className="text-neutral-700"
           onChange={handleFileChange}
         />
       </form>
